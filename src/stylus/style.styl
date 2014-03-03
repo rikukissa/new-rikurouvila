@@ -1,0 +1,136 @@
+@import "mixins"
+
+@font-face
+  font-family: 'Glyphicons Social'
+  src url('../fonts/glyphicons-social-regular.svg') format('svg'),
+    url('../fonts/glyphicons-social-regular.eot?') format('eot'),
+    url('glyphicons-social-regular.woff') format('woff'),
+    url('glyphicons-social-regular.ttf') format('truetype')
+
+body, html
+  margin 0
+  height 100%
+  font-family 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif
+  font-weight 300
+  font-size 16px
+  color #66595c
+  line-height 1.9em
+  -webkit-font-smoothing antialiased
+
+h1
+  font-weight 300
+
+
+#main
+  background #fafcff
+  background-image -webkit-gradient(linear, left top, right bottom, color-stop(0.55, #FAFCFF), color-stop(1, #E4EBF7))
+  background-image -o-linear-gradient(right bottom, #FAFCFF 55%, #E4EBF7 100%)
+  background-image -moz-linear-gradient(right bottom, #FAFCFF 55%, #E4EBF7 100%)
+  background-image -webkit-linear-gradient(right bottom, #FAFCFF 55%, #E4EBF7 100%)
+  background-image -ms-linear-gradient(right bottom, #FAFCFF 55%, #E4EBF7 100%)
+  background-image linear-gradient(to right bottom, #FAFCFF 55%, #E4EBF7 100%)
+  border-bottom 1px solid #E4EBF7
+  height 75%
+  position relative
+  .foo
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    display table
+  .bar
+    display table-cell
+    vertical-align middle
+    text-align center
+  .baz
+    text-align left
+    display inline-block
+  h1
+    font-size 3em
+    color #333
+    margin 0
+    font-weight bold
+
+  p
+    font-size 1.1em
+    text-align center
+a
+  color #67B8CB
+  text-decoration none
+.view
+  position relative
+  overflow hidden
+  padding 3em 1em
+  box-sizing border-box
+
+.container
+  width 1040px
+  margin auto
+
+  @media(max-width: 1080px)
+    width auto
+
+.feature
+  display table
+  margin 2em 0
+  img
+    max-width 100%
+    margin auto
+    display block
+
+
+.feature-image,
+.feature-text
+  display table-cell
+  vertical-align middle
+  &:last-child
+    padding-left 1.5em
+
+.feature-text
+  width 75%
+
+.feature-image
+  width 25%
+
+@media(max-width: 700px)
+  .feature
+    margin 0em 0
+    display block
+
+  .feature-image
+    display none
+
+  .feature-text
+    width auto
+    &:last-child
+      padding 0
+
+strong
+  display inline-block
+  background #f5f5f5
+  padding 0.3em 0.3em
+  font-size 14px
+  line-height normal
+  border 1px solid #ddd
+  color #777
+  border-radius 3px
+  font-weight normal
+
+.footer
+  padding 1em 0
+  color #fff
+  background #344E5D
+  a
+    color #fff
+
+.email
+  float right
+  margin-right 1em
+
+.social-links
+  display inline-block
+  vertical-align bottom
+
+.icon
+  font-family 'Glyphicons Social'

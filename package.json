@@ -1,0 +1,35 @@
+{
+  "name": "gulp-template",
+  "version": "0.0.0",
+  "description": "Project template for gulp.js",
+  "main": "gulpfile.js",
+  "scripts": {
+    "prepublish": "bower install",
+    "start": "gulp",
+    "build": "gulp build",
+    "deploy": "gulp build && cd public && git init && git add -A && git remote add origin git@github.com:rikukissa/rikukissa.github.io.git && git commit -m \"Generated at $(date)\" && git push -f origin master && rm -rf .git"
+  },
+  "keywords": [
+    "gulp",
+    "template"
+  ],
+  "author": "",
+  "dependencies": {
+    "coffee-script": "~1.7.1"
+  },
+  "devDependencies": {
+    "gulp-rename": "~0.2.1",
+    "gulp-uglify": "~0.1.0",
+    "gulp-util": "~2.2.9",
+    "gulp-stylus": "0.0.9",
+    "gulp-jade": "~0.3.0",
+    "gulp-browserify": "~0.2.5",
+    "node-static": "~0.7.3",
+    "gulp-minify-css": "~0.2.0",
+    "coffeeify": "~0.5.2",
+    "tiny-lr": "0.0.5",
+    "gulp-livereload": "~0.2.0",
+    "bower": "~1.2.8",
+    "gulp": "~3.5.2"
+  }
+}
