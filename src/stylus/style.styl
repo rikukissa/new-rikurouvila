@@ -29,35 +29,63 @@ h1
   background-image -webkit-linear-gradient(right bottom, #FAFCFF 55%, #E4EBF7 100%)
   background-image -ms-linear-gradient(right bottom, #FAFCFF 55%, #E4EBF7 100%)
   background-image linear-gradient(to right bottom, #FAFCFF 55%, #E4EBF7 100%)
-  border-bottom 1px solid #E4EBF7
+  border-bottom 1px solid #d5deee
   height 75%
   position relative
-  .foo
-    position absolute
-    top 0
-    left 0
-    width 100%
-    height 100%
-    display table
-  .bar
-    display table-cell
-    vertical-align middle
-    text-align center
-  .baz
-    text-align left
-    display inline-block
-  h1
-    font-size 3em
-    color #333
-    margin 0
-    font-weight bold
 
+.splash
+  position absolute
+  top 0
+  left 0
+  width 100%
+  height 100%
+  display table
+
+.splash-container
+  display table-cell
+  vertical-align middle
+  text-align center
+
+.splash-content
+  text-align left
+  display inline-block
+  padding 0 30px
   p
     font-size 1.1em
     text-align center
+  img
+    height 125px
+    @media(max-width: 700px)
+      max-width 100%
+      height auto
+      display block
+      margin auto
+
+.stripes
+  width 30px
+  height 100%
+  position absolute
+  top 0
+  left 0
+  @media(max-width: 700px)
+    width 15px
+
+.stripe
+  width 50%
+  height 100%
+  float left
+
+.stripe-cyan
+  background #A2DBE4
+
+.stripe-blue
+  background #67B8CB
+
+
 a
   color #67B8CB
   text-decoration none
+
 .view
   position relative
   overflow hidden
@@ -67,7 +95,7 @@ a
 .container
   width 1040px
   margin auto
-
+  padding 0 1em
   @media(max-width: 1080px)
     width auto
 
@@ -118,19 +146,19 @@ strong
   font-weight normal
 
 .footer
-  padding 1em 0
+  padding 1em
   color #fff
   background #344E5D
-  a
-    color #fff
-
-.email
-  float right
-  margin-right 1em
+  span
+    font-size 14px
+    vertical-align middle
 
 .social-links
   display inline-block
   vertical-align bottom
 
 .icon
+  color #fff
+  vertical-align middle
+  line-height normal
   font-family 'Glyphicons Social'

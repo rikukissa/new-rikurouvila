@@ -3,15 +3,20 @@ html
   head
     title Riku Rouvila
     meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1')
     meta(name='keywords', content='developer,javascript,finland,unity,unity3d,coffeescript,node.js,frontend,angularjs,ruby on rails,mobile,html5,couching,consulting,git')
     link(rel='stylesheet', href='css/style.css')
     script(src='js/bundle.js')
   body
     section#main
-      .foo
-        .bar
-          .baz
-            h1 Riku Rouvila
+      .stripes
+        .stripe.stripe-blue
+        .stripe.stripe-cyan
+
+      .splash
+        .splash-container
+          .splash-content
+            img(src='images/logo/logo.png')
             p
               |Full-stack developer @&nbsp;
               a(href='https://leonidasoy.fi/', target='_blank') Leonidas Oy
@@ -57,6 +62,7 @@ html
 
 
     footer.footer
+      span Contact me
       nav.social-links
         a(href='https://www.linkedin.com/in/rikurouvila', target='_blank')
           span.icon
@@ -67,6 +73,6 @@ html
         a(href='https://twitter.com/rikurouvila', target='_blank')
           span.icon
             | &#xE032;
-
-      a.email(href='https://twitter.com/rikurouvila', target='_blank')
-        | riku.rouvila@gmail.com
+        a(href='mailto: riku.rouvila@gmail.com', target='_blank')
+          span.icon
+            | &#xE040;
